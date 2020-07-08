@@ -30,6 +30,16 @@ class Vingador extends Pessoa {
   }
 }
 
+const thor = new Vingador(
+  "Thor",
+  "1.85",
+  "100kg",
+  ["Deus do Trovão", "Super força", "Vôo", "Longevidade"],
+  true,
+  true,
+  false
+);
+
 const doutorEstranho = new Vingador(
   "Dr. Stephen Vincent Strange",
   "1.75",
@@ -47,5 +57,9 @@ const doutorEstranho = new Vingador(
 );
 
 document.getElementById("lutar").onclick = function () {
+  thor.lutar();
+};
+
+document.getElementById("lutar2").onclick = function () {
   doutorEstranho.lutar();
 };
