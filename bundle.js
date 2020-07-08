@@ -52,15 +52,15 @@ var Vingador = /*#__PURE__*/function (_Pessoa) {
   _createClass(Vingador, [{
     key: "lutar",
     value: function lutar() {
-      alert("".concat(this.nome, " est\xE1 lutando usando ").concat(this.poderes[1]));
+      alert("".concat(this.nome, " est\xE1 lutando usando ").concat(this.poderes[2]));
     }
   }]);
 
   return Vingador;
 }(Pessoa);
 
-var thor = new Vingador("Thor", "1.85", "100kg", ["Deus do Trovão", "Super força", "Vôo", "Longevidade"], true, true, false);
+var doutorEstranho = new Vingador("Dr. Stephen Vincent Strange", "1.75", "85kg", ["Mestre das Artes Místicas", "Olho de Agamotto", "Capa de Levitação", "Livro Vishanti", "Esfera de Agamotto"], true, true, false);
 
 document.getElementById("lutar").onclick = function () {
-  thor.lutar();
+  doutorEstranho.lutar();
 };

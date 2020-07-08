@@ -26,20 +26,26 @@ class Vingador extends Pessoa {
   }
 
   lutar() {
-    alert(`${this.nome} está lutando usando ${this.poderes[1]}`);
+    alert(`${this.nome} está lutando usando ${this.poderes[2]}`);
   }
 }
 
-const thor = new Vingador(
-  "Thor",
-  "1.85",
-  "100kg",
-  ["Deus do Trovão", "Super força", "Vôo", "Longevidade"],
+const doutorEstranho = new Vingador(
+  "Dr. Stephen Vincent Strange",
+  "1.75",
+  "85kg",
+  [
+    "Mestre das Artes Místicas",
+    "Olho de Agamotto",
+    "Capa de Levitação",
+    "Livro Vishanti",
+    "Esfera de Agamotto",
+  ],
   true,
   true,
   false
 );
 
 document.getElementById("lutar").onclick = function () {
-  thor.lutar();
+  doutorEstranho.lutar();
 };
